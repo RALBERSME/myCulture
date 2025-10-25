@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: rgb(210, 247, 182);
+  background-image: url(https://cdn.pixabay.com/photo/2012/10/03/11/20/potsdam-59040_640.jpg);
+  background-repeat: repeat-x;
+  overflow: hidden;
+}
+
+.sec2 {
+  background-color: rgb(164, 218, 247);
+  background-image: url(https://cdn.pixabay.com/photo/2017/09/18/10/15/potsdam-2761211_640.jpg);
+  background-repeat: repeat-x;
+}
+
+.sec3 {
+  background-color: #f8de88;
+  background-image: url(https://cdn.pixabay.com/photo/2023/05/11/08/43/castle-7985808_640.jpg);
+  background-repeat: repeat-x;
+}
+
+.sec4 {
+  background-color: rgb(250, 250, 166);
+  background-image: url(https://cdn.pixabay.com/photo/2020/06/20/10/55/village-church-5320511_640.jpg);
+  background-repeat: repeat-x;
+}
+
+.sec5 {
+  background-color: #b8fbc9;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cg fill='%231c8842' fill-opacity='0.3'%3E%3Cpath d='M12 0h18v6h6v6h6v18h-6v6h-6v6H12v-6H6v-6H0V12h6V6h6V0zm12 6h-6v6h-6v6H6v6h6v6h6v6h6v-6h6v-6h6v-6h-6v-6h-6V6zm-6 12h6v6h-6v-6zm24 24h6v6h-6v-6z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+  background-image: url(https://cdn.pixabay.com/photo/2019/06/11/22/14/ehrenburg-castle-4267971_640.jpg);
+  background-repeat: repeat-x;
+}
+
+h1 {
+  padding-top: 20%;
+  font-size: 90px;
+  color: #fff;
+}
+
+p {
+  font-size: 35px;
+  color: black;
+  font-weight: 600;
+}
+.more {
+  padding-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 1rem;
+}
+.outro {
+  margin-top: -17.5%;
+}
+#final {
+  margin-left: 10%;
+  color: rgb(222, 148, 9);
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #5c5c5c, -2px 2px 0 #000,
+    2px 2px 0 #696969, -3px 0px 0 #000, 3px 0px 0 #7a7a7a, 0px -3px 0 #000,
+    2px 5px 0 #000;
+}
+
+#thanks {
+  margin-left: 55%;
+  margin-top: -12.5%;
+}
+#lastMore {
+  margin-top: -5%;
+}
+a {
+  text-decoration: none;
+  margin-top: 2px;
+  margin-left: 10%;
+  color: rgb(1, 35, 32);
+  font-weight: bold;
+}
+a:hover,
+#next:hover {
+  color: rgb(9, 5, 233);
+}
+#next {
+  font-size: 1.25rem;
+  color: rgb(222, 148, 9);
+}
+
+.sec2 p {
+  color: rgb(150, 207, 250);
+}
+
+.sec3 p {
+  color: rgb(88, 178, 247);
+}
+
+.sec4 p {
+  color: #696905;
+}
+
+.sec5 .images {
+  display: flex;
+  margin-top: 20%;
+  gap: 40px;
+}
+
+.sec5 .images img {
+  max-width: 350px;
+}
+
+section .animate {
+  opacity: 0;
+  filter: blur(5px);
+  transition: 0.5s;
+}
+
+section.show-animate .animate {
+  opacity: 1;
+  filter: blur(0px);
+}
+
+.sec2 .animate {
+  transform: translateX(100%);
+}
+
+.sec2.show-animate .animate {
+  transform: translateX(0);
+}
+
+.sec3 .animate {
+  transform: scale(0.7);
+}
+
+.sec3.show-animate .animate {
+  transform: scale(1);
+}
+
+.sec4 .animate {
+  transform: translateX(-100%);
+}
+
+.sec4.show-animate .animate {
+  transform: translateX(0);
+}
+
+.sec5 .animate {
+  transform: translateX(100%) rotate(-90deg);
+}
+
+.sec5.show-animate .animate {
+  transform: translateX(0) rotate(0deg);
+}
+
+p.animate {
+  transition-delay: 0.2s;
+}
+
+.sec5 img:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.sec5 img:nth-child(3) {
+  transition-delay: 0.4s;
+}
