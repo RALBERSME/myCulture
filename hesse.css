@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-image: url(https://cdn.pixabay.com/photo/2015/08/09/13/21/door-881588_640.jpg);
+  overflow: hidden;
+}
+
+.container {
+  margin: 5%;
+  display: flex;
+}
+.card {
+  display: flex;
+  height: 800px;
+  width: 400px;
+  background-color: rgba(54, 84, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: -1.5rem 0 2rem black;
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+  transform: rotate(5deg);
+}
+
+.card:not(:first-child) {
+  margin-left: -50px;
+}
+
+.card:hover {
+  transform: translateY(-60px);
+  transition: 0.4s ease-out;
+}
+
+.card:hover ~ .card {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+}
+
+.title {
+  color: #f6f1a6;
+  font-weight: 300;
+  position: absolute;
+  left: 50px;
+  top: 35px;
+  font-size: 1.7rem;
+}
+
+.bar {
+  position: absolute;
+  top: 100px;
+  left: 40px;
+  height: 7.5px;
+  width: 300px;
+}
+
+.cardLine {
+  background-color: rgb(246, 241, 166);
+  width: 100%;
+  height: 100%;
+  border-radius: 60%;
+}
+
+.fillCardLine {
+  position: absolute;
+  top: 0px;
+  z-index: 3;
+  width: 0px;
+  height: 100%;
+  border-radius: 60%;
+  background: linear-gradient(
+    90deg,
+    rgb(28, 0, 244) 0%,
+    rgb(27, 177, 200) 10%,
+    rgb(78, 72, 248) 25%,
+    rgb(246, 241, 166) 55%,
+    rgb(78, 72, 248) 75%,
+    rgb(27, 177, 200) 85%,
+    rgb(28, 0, 244) 100%
+  );
+  transition: 0.5s ease-out;
+}
+
+.card:hover .fillCardLine {
+  width: 300px;
+  transition: 0.4s ease-out;
+}
+.content {
+  padding: 1px;
+  padding-top: 35px;
+  color: white;
+  font-size: 1.1rem;
+}
+
+a {
+  text-decoration: none;
+  margin-top: 2px;
+  color: rgb(242, 227, 23);
+}
+a:hover,
+#next:hover {
+  color: rgb(249, 81, 167);
+}
+#next {
+  font-size: 1.25rem;
+  color: rgb(7, 233, 199);
+}
