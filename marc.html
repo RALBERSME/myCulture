@@ -3,17 +3,156 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="marc.css" />
     <title>Franz Marc</title>
   </head>
   <body>
-    Franz Marc, Maler und Grafiker
-    <div class="links">
-      <a href="schinkel.html">zum nächsten Künstler</a>
-      <p
-        onclick="() => window.location.href= 'https://ralbersme.github.io/myGallery/'"
-      >
-        zur Galerie
-      </p>
+    <div class="container">
+      <div class="split">
+        <div class="left">
+          <div class="videos">
+            <iframe
+              src="https://www.youtube.com/embed/LqbdZRbrj9w"
+              title="Franz Marc, Blue Horses and Der Blaue Reiter"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+
+            <iframe
+              src="https://www.youtube.com/embed/6lFypYy1-Cw"
+              title="Blaues Pferd I - Franz Marc - Gemälde-Beschreibung &amp; -Interpretation"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+
+            <iframe
+              src="https://www.youtube.com/embed/vL7jvfjLnRc"
+              title="Im Dialog mit der Natur - Franz Marc Museum, Kochel a. See"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+
+            <iframe
+              src="https://www.youtube.com/embed/JlJl47JvwSQ?list=RDJlJl47JvwSQ"
+              title="Franz Marc: Katzengefühle"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <br /><br />
+            <img
+              width="600px"
+              height="770px"
+              style="border-radius: 10px"
+              src="https://cdn.pixabay.com/photo/2016/05/18/00/27/franz-marc-1399594_1280.jpg"
+            />
+          </div>
+        </div>
+        <div class="right">
+          <div class="wrapper">
+            <div class="intro">
+              <h1>Franz Marc</h1>
+              <br />
+              <h2>
+                Franz Marc wurde am 8. Februar 1880 in München geboren und starb
+                am 4. März 1916 bei Brangle in Frankreich. Schon früh
+                entwickelte Marc ein intensives Interesse an Zeichnen und Natur.
+                Ursprünglich begann er ein Studium der Architektur, wandte sich
+                aber rasch der Malerei zu, weil ihn das bildnerische Formdenken
+                stärker faszinierte.
+                <br />
+                Er studierte an der Akademie der Bildenden Künste in München, wo
+                er den Einfluss der jungen avantgardistischen Strömungen aufnahm
+                und sich in der Münchner Blau-Reiher-Gruppe, später zusammen mit
+                Künstlern wie Kandinsky, dem Expressionismus annäherte. Er
+                entwickelte eine Vorliebe für klare Form, reduzierte Farben und
+                eine monumentale Bildsprache, die Natur und Tierwelt als
+                zentrale Motive nutzte. Zentral für ihn war die Idee, durch
+                abstrakte, vereinfachte Formen eine tiefere seelische
+                Wirklichkeit zu erschließen und dem Bild eine klare innere
+                Ordnung zu geben.
+                <br />
+                <br />
+                Zu seinen wichtigsten Ansätzen gehört die Einführung
+                stilisierter Tierfiguren, besonders des Pferdes, in intensiver,
+                leuchtender Farbgebung. Seine Bilder streben nach einer
+                harmonischen, oft spirituellen Wahrnehmung der Welt, in der
+                Farben als Seelenzeichen fungieren. Während seiner frühen
+                Arbeiten orientierte er sich an Naturalismus, doch bald
+                entwickelte er eine expressive, fast ikonische Bildsprache.
+                <br />
+
+                Zu seinen berühmtesten Werken gehören die Tierbilder und
+                reduzierten Farbstudien der Blaue Reiter-Gruppe. Werke wie » Der
+                blauen Pferde « (1911) und » Landschaft mit Rotem Haus « (1913)
+                gelten als Meilensteine der expressionistischen Malerei, weil
+                sie eine emotionale Intensität mit einer neuen, geometrischen
+                Klarheit verbinden. Marc trug maßgeblich zur Entwicklung des
+                deutschen Expressionismus bei. Sein kurzes, aber einflussreiches
+                Schaffen endete tragisch während des Ersten Weltkriegs.<br /><br />Die
+                Videos links vermitteln Dir einen Eindruck des Stils von Marc.
+                Klicke dazu auf Play und gehe dann im Video unten rechts auf das
+                die weißen Kästchenecken. <br /><span
+                  style="color: rgb(48, 250, 125)"
+                  >Komm, male auch Du ein Bild in seinem Stil:</span
+                >
+              </h2>
+            </div>
+
+            <br />
+            <canvas id="draw-canvas" width="1200" height="280"></canvas>
+            <div class="controls">
+              <button id="putzen">Tafel putzen</button
+              ><button onclick="changeColor(2)" id="schwarz">
+                schwarze Farbe
+              </button>
+              <button
+                style="background-color: #2717fdff; color: rgb(214, 211, 211)"
+                onclick="changeColor(1)"
+                id="blau"
+              >
+                blaue Farbe
+              </button>
+              <button
+                style="background-color: #c20b30ff; color: rgb(214, 211, 211)"
+                onclick="changeColor(3)"
+                id="rot"
+              >
+                rote Farbe
+              </button>
+              <button
+                style="background-color: #097934ff; color: rgb(214, 211, 211)"
+                onclick="changeColor(4)"
+                id="grün"
+              >
+                grüne Farbe
+              </button>
+              <button onclick="changeThickness(1)" id="dick">
+                breiter Pinsel
+              </button>
+              <button onclick="changeThickness(2)" id="dünn">
+                mittlerer Pinsel
+              </button>
+              <button onclick="changeThickness(3)" id="dünn">
+                dünner Pinsel
+              </button>
+            </div>
+            <br /><a href="https://ralbersme.github.io/myGallery/">
+              &#10149; klicke hier, um zur Galerie zu gelangen</a
+            ><br />
+            <a id="next" href="kalman.html">&#10149; zum nächsten Künstler</a>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <script src="marc.js"></script>
   </body>
 </html>
