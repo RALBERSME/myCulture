@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -19,11 +19,11 @@ body {
   position: absolute;
   top: 70%;
   left: 20%;
-  color: rgb(252, 249, 181);
+  color: rgb(252, 251, 225);
   width: 60%;
-  font-family: "Libre Baskerville", serif;
-  font-weight: 400;
-  font-size: 0.75rem;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.3;
+  font-size: 0.8rem;
 }
 .gallery {
   position: relative;
