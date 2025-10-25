@@ -153,6 +153,7 @@ body {
   color: white;
   background-color: black;
   margin-left: -25%;
+  transition: all 1s;
 }
 
 a {
@@ -170,4 +171,5 @@ a:hover {
   top: 6%;
   left: 78%;
   transform: rotate(15deg);
+  transition: all 1s;
 }
