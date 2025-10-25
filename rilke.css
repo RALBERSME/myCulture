@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(250, 233, 229);
+  background-image: url(https://cdn.pixabay.com/animation/2023/01/06/06/39/06-39-16-796_512.gif);
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-family: "Quicksand", sans-serif;
+  animation: changeBgColor 8s ease-in-out infinite;
+}
+@keyframes changeBgColor {
+  from {
+    background-color: rgb(253, 213, 204);
+  }
+  to {
+    background-color: rgb(253, 233, 183);
+  }
+}
+
+.container {
+  margin: 5%;
+  display: flex;
+  gap: 15%;
+}
+.gedichte {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.gedicht {
+  padding: 35px 50px;
+  width: 430px;
+  transform: rotate(-5deg);
+}
+.italic {
+  font-style: italic;
+}
+.typing-effect {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 4s steps(50, end) forwards;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+.text {
+  margin-top: -2.5%;
+  font-size: 1.1rem;
+  background-image: url(https://cdn.pixabay.com/photo/2022/03/31/08/47/moon-7102510_640.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 15px;
+  border-radius: 10px;
+}
+.secondText {
+  transform: rotateY(-90deg);
+  animation: rotateText 3s 5s linear forwards;
+}
+@keyframes rotateText {
+  from {
+    transform: rotateY(-90deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+}
+
+a {
+  text-decoration: none;
+  margin-top: 2px;
+  color: rgb(4, 155, 80);
+  font-weight: bold;
+}
+a:hover,
+#next:hover {
+  color: rgb(127, 5, 68);
+}
+#next {
+  font-size: 1.25rem;
+  color: rgb(2, 142, 56);
+  text-decoration: overline underline;
+}
