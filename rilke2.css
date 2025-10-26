@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background-image: url(images/traube.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  margin-right: 60%;
+  margin-left: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  color: rgb(245, 245, 245);
+  letter-spacing: 2px;
+  font-style: italic;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  color: rgb(245, 245, 245);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(237, 248, 208);
+}
+a:hover {
+  color: rgb(219, 120, 207);
+}
+/* .paper-piece {
+  flex-basis: 70%;
+  width: 32%;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 10px 10px 10px rgb(77, 77, 77);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.paper-piece::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  border-color: rgb(65, 78, 73) #5c6f68;
+  border-width: 0;
+  border-style: solid;
+  transition-duration: 300ms;
+  transition-property: border-width, border-radius;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  left: 0;
+  top: 0;
+}
+
+.paper-piece:hover:before {
+  transition-duration: 300ms;
+  transition-property: border-width, border-radius;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  border-width: 0 0 6rem 6rem;
+  border-radius: 0 0 1rem 0;
+} */
+
+/* .paper-hole {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #5c6f68;
+  border-radius: 50%;
+  margin: 2rem;
+} */
+.poemPaper {
+  flex-basis: 70%;
+  width: 100%;
+  background-color: rgb(237, 248, 208);
+  border-radius: 1rem;
+  box-shadow: 10px 20px 20px rgb(27, 26, 27);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.poemPaper::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  border-color: rgb(219, 120, 207) rgb(253, 183, 245);
+  border-width: 0;
+  border-width: 0 0 42rem 38.5rem;
+  border-style: solid;
+  transition-duration: 300ms;
+  transition-property: border-width, border-radius;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  transition: all 1s;
+  left: 0;
+  top: 0;
+  border-radius: 0 0 1rem 0;
+}
+
+.poemPaper:hover:before {
+  transition-duration: 300ms;
+  transition-property: border-width, border-radius;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  transition: all 1s;
+  border-width: 0 0 6rem 6rem;
+  border-width: 0;
+  /* border-radius: 0 0 1rem 0; */
+}
+.poemPaper::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  border-color: rgb(219, 120, 207) rgb(253, 183, 245);
+  border-width: 0;
+  border-width: 5rem 5rem 0 0;
+  border-style: solid;
+  transition-duration: 300ms;
+  transition-property: border-width, border-radius;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  transition: all 1s;
+  left: 0;
+  top: 0;
+  border-radius: 0 0 1rem 0;
+}
+.poem {
+  padding: 25px 170px;
+  transition: all 2s;
+}
+.poem:hover {
+  transform: scale(1.1) translateY(35px);
+}
