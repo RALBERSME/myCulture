@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-color: rgb(243, 216, 245);
+  background-image: url(https://cdn.pixabay.com/animation/2023/08/14/11/14/11-14-42-513_512.gif);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.container {
+  position: relative;
+  margin-left: 39.3%;
+  background-image: url(https://cdn.pixabay.com/animation/2025/01/01/16/07/16-07-37-924_512.gif);
+  background-repeat: repeat;
+  height: 100vh;
+  filter: brightness(90%);
+}
+#overlay {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(244, 177, 249, 0.4);
+}
+.char {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+#char1 {
+  position: absolute;
+  top: 0px;
+  left: 10%;
+  transform: translateY(0px);
+  transition: all 1s;
+  animation: moveCharDown 3s linear forwards;
+}
+#char2 {
+  position: absolute;
+  top: 0px;
+  left: 12%;
+
+  transform: translateY(0px);
+  transition: all 1s;
+  animation: moveCharDown 3s linear forwards;
+}
+#char3 {
+  position: absolute;
+  top: 0px;
+  left: 14%;
+
+  transform: translateY(0px);
+  transition: all 1s;
+  animation: moveCharDown 3s 1s linear forwards;
+}
+#char4 {
+  position: absolute;
+  top: 0px;
+  left: 16%;
+
+  transform: translateY(0px);
+  transition: all 1s;
+  animation: moveCharDown 3s 2s linear forwards;
+}
+#char5 {
+  position: absolute;
+  top: 0px;
+  left: 18%;
+
+  transform: translateY(0px);
+  transition: all 1s;
+  animation: moveCharDown 3s 1s linear forwards;
+}
+@keyframes moveCharDown {
+  0% {
+    transform: translateY(0px) translateX(0);
+  }
+  75% {
+    transform: translateY(220px) translateX(0);
+  }
+  100% {
+    transform: translateY(220px);
+  }
+}
+#char6 {
+  position: absolute;
+  top: 950px;
+  left: 20%;
+
+  transform: translateY(0px);
+  transition: all 1s;
+  animation: moveCharUp 3s linear forwards;
+}
+#char7 {
+  position: absolute;
+  top: 950px;
+  left: 22%;
+
+  transform: translateY(0px);
+  transition: all 1s;
+  animation: moveCharUp 3s linear forwards;
+}
+#char8 {
+  position: absolute;
+  top: 950px;
+  left: 24%;
+
+  transform: translateY(0px);
+  transition: all 1s;
+  animation: moveCharUp 3s 1s linear forwards;
+}
+#char9 {
+  position: absolute;
+  top: 950px;
+  left: 26%;
+
+  transform: translateY(0px);
+  transition: all 1s;
+  animation: moveCharUp 3s 2s linear forwards;
+}
+#char10 {
+  position: absolute;
+  top: 950px;
+  left: 28%;
+
+  transform: translateY(0px);
+  transition: all 1s;
+  animation: moveCharUp 3s 1s linear forwards;
+}
+@keyframes moveCharUp {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-732px);
+  }
+}
+
+footer {
+  position: absolute;
+  font-size: 2.3rem;
+  font-weight: bold;
+  top: 65%;
+  left: 30%;
+  text-align: center;
+  font-style: italic;
+  translate: all 1s;
+  transform: rotateX(90deg);
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.75rem;
+  padding: 7.5px;
+  color: white;
+  background-color: dodgerblue;
+  border-radius: 5px;
+}
+a:hover {
+  color: dodgerblue;
+  background-color: white;
+}
