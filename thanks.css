@@ -6,14 +6,14 @@
 body {
   height: 100vh;
   background-color: rgb(243, 216, 245);
-  background-image: url(https://cdn.pixabay.com/animation/2023/08/14/11/14/11-14-42-513_512.gif);
+  background-image: url(images/pinkTree.gif);
   background-repeat: no-repeat;
   background-size: contain;
 }
 .container {
   position: relative;
   margin-left: 39.3%;
-  background-image: url(https://cdn.pixabay.com/animation/2025/01/01/16/07/16-07-37-924_512.gif);
+  background-image: url(images/flowerAnimation.gif);
   background-repeat: repeat;
   height: 100vh;
   filter: brightness(90%);

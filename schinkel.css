@@ -14,33 +14,33 @@ section {
   flex-direction: column;
   min-height: 100vh;
   background-color: rgb(210, 247, 182);
-  background-image: url(https://cdn.pixabay.com/photo/2012/10/03/11/20/potsdam-59040_640.jpg);
+  background-image: url(images/potsdam.jpg);
   background-repeat: repeat-x;
   overflow: hidden;
 }
 
 .sec2 {
   background-color: rgb(164, 218, 247);
-  background-image: url(https://cdn.pixabay.com/photo/2017/09/18/10/15/potsdam-2761211_640.jpg);
+  background-image: url(images/potsdam2.jpg);
   background-repeat: repeat-x;
 }
 
 .sec3 {
   background-color: #f8de88;
-  background-image: url(https://cdn.pixabay.com/photo/2023/05/11/08/43/castle-7985808_640.jpg);
+  background-image: url(images/schinkel.jpg);
   background-repeat: repeat-x;
 }
 
 .sec4 {
   background-color: rgb(250, 250, 166);
-  background-image: url(https://cdn.pixabay.com/photo/2020/06/20/10/55/village-church-5320511_640.jpg);
+  background-image: url(images/schinkel2.jpg);
   background-repeat: repeat-x;
 }
 
 .sec5 {
   background-color: #b8fbc9;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cg fill='%231c8842' fill-opacity='0.3'%3E%3Cpath d='M12 0h18v6h6v6h6v18h-6v6h-6v6H12v-6H6v-6H0V12h6V6h6V0zm12 6h-6v6h-6v6H6v6h6v6h6v6h6v-6h6v-6h6v-6h-6v-6h-6V6zm-6 12h6v6h-6v-6zm24 24h6v6h-6v-6z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
-  background-image: url(https://cdn.pixabay.com/photo/2019/06/11/22/14/ehrenburg-castle-4267971_640.jpg);
+  background-image: url(images/ehrenburg-castle.jpg);
   background-repeat: repeat-x;
 }
 

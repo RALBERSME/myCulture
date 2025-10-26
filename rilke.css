@@ -6,7 +6,7 @@
 }
 body {
   background-color: rgb(250, 233, 229);
-  background-image: url(https://cdn.pixabay.com/animation/2023/01/06/06/39/06-39-16-796_512.gif);
+  background-image: url(images/zeichner.gif);
   background-repeat: no-repeat;
   background-size: contain;
   font-family: "Quicksand", sans-serif;
@@ -58,7 +58,7 @@ body {
 .text {
   margin-top: -2.5%;
   font-size: 1.1rem;
-  background-image: url(https://cdn.pixabay.com/photo/2022/03/31/08/47/moon-7102510_640.jpg);
+  background-image: url(images/moon.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 15px;

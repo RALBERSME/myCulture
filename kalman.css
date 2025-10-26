@@ -15,7 +15,7 @@ body {
   grid-template-columns: 1fr 1fr;
 }
 .container {
-  background-image: url(https://cdn.pixabay.com/animation/2023/04/06/23/17/23-17-32-365_512.gif);
+  background-image: url(images/piano.gif);
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: 10px;

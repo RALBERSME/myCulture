@@ -16,7 +16,7 @@ body {
     background: black;
   }
   to {
-    background-image: url("https://cdn.pixabay.com/photo/2016/09/10/15/45/marbles-1659398_640.jpg");
+    background-image: url("images/marbles.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
