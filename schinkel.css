@@ -93,9 +93,11 @@ a:hover,
 #next {
   font-size: 1.25rem;
   color: rgb(222, 148, 9);
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
-
+.space {
+  height: 50px;
+}
 .sec2 p {
   color: rgb(150, 207, 250);
 }
