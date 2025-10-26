@@ -25,6 +25,7 @@ body {
   display: flex;
   gap: 5px;
   padding-top: 65%;
+  justify-content: space-between;
 }
 
 .board {
