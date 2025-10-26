@@ -20,7 +20,10 @@ body {
   align-items: center;
   flex-direction: column;
 }
-
+.split {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
 h1 {
   color: rgb(245, 245, 245);
   letter-spacing: 2px;
@@ -34,7 +37,13 @@ h1 {
   gap: 25px;
   color: rgb(245, 245, 245);
 }
-
+#lese {
+  margin-top: 5px;
+  color: rgb(219, 120, 207);
+}
+#lese:hover {
+  color: rgb(11, 18, 228);
+}
 a {
   text-decoration: none;
   color: rgb(237, 248, 208);
@@ -42,47 +51,6 @@ a {
 a:hover {
   color: rgb(219, 120, 207);
 }
-/* .paper-piece {
-  flex-basis: 70%;
-  width: 32%;
-  background-color: white;
-  border-radius: 1rem;
-  box-shadow: 10px 10px 10px rgb(77, 77, 77);
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.paper-piece::before {
-  content: "";
-  position: absolute;
-  display: inline-block;
-  border-color: rgb(65, 78, 73) #5c6f68;
-  border-width: 0;
-  border-style: solid;
-  transition-duration: 300ms;
-  transition-property: border-width, border-radius;
-  transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
-  left: 0;
-  top: 0;
-}
-
-.paper-piece:hover:before {
-  transition-duration: 300ms;
-  transition-property: border-width, border-radius;
-  transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
-  border-width: 0 0 6rem 6rem;
-  border-radius: 0 0 1rem 0;
-} */
-
-/* .paper-hole {
-  width: 1.5rem;
-  height: 1.5rem;
-  background-color: #5c6f68;
-  border-radius: 50%;
-  margin: 2rem;
-} */
 .poemPaper {
   flex-basis: 70%;
   width: 100%;
@@ -101,7 +69,7 @@ a:hover {
   display: inline-block;
   border-color: rgb(219, 120, 207) rgb(253, 183, 245);
   border-width: 0;
-  border-width: 0 0 42rem 38.5rem;
+  border-width: 0 0 44rem 38.5rem;
   border-style: solid;
   transition-duration: 300ms;
   transition-property: border-width, border-radius;
@@ -119,7 +87,6 @@ a:hover {
   transition: all 1s;
   border-width: 0 0 6rem 6rem;
   border-width: 0;
-  /* border-radius: 0 0 1rem 0; */
 }
 .poemPaper::after {
   content: "";
@@ -138,9 +105,18 @@ a:hover {
   border-radius: 0 0 1rem 0;
 }
 .poem {
-  padding: 25px 170px;
+  padding: 25px 0px;
+  padding-left: 140px;
   transition: all 2s;
 }
 .poem:hover {
-  transform: scale(1.1) translateY(35px);
+  transform: scale(1.15) translateY(35px);
+}
+h4 {
+  margin-top: -3px;
+}
+
+.video {
+  margin-top: 10%;
+  margin-left: -30%;
 }
