@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="marc.css" />
+    <title>Franz Marc</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="split">
+        <div class="left">
+          <div class="videos">
+            <iframe
+              src="https://www.youtube.com/embed/LqbdZRbrj9w"
+              title="Franz Marc, Blue Horses and Der Blaue Reiter"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+
+            <iframe
+              width="1300"
+              height="731"
+              src="https://www.youtube.com/embed/6g9sbnMphzY"
+              title="The work of Franz Marc: Expressing the being of animals"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+
+            <iframe
+              width="1300"
+              height="731"
+              src="https://www.youtube.com/embed/46fmlqZdRqg"
+              title="Franz Marc: Capturing the Soul of Nature｜Artist Biography"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+
+            <iframe
+              width="1300"
+              height="731"
+              src="https://www.youtube.com/embed/KjCTB4xjSD8"
+              title="Franz Marc: A collection of 338 works (HD)"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <br /><br />
+            <img
+              width="600px"
+              height="770px"
+              style="border-radius: 10px"
+              src="images/franz-marc.jpg"
+            />
+          </div>
+        </div>
+        <div class="right">
+          <div class="wrapper">
+            <div class="intro">
+              <h1>Franz Marc</h1>
+              <br />
+              <h2>
+                Franz Marc was born on February 8, 1880, in Munich and died on
+                March 4, 1916, near Brangle in France. From an early age, Marc
+                developed an intense interest in drawing and nature. He
+                initially began studying architecture but quickly turned to
+                painting because he was more fascinated by the visual aspects of
+                form.
+                <br />
+                He studied at the Academy of Fine Arts in Munich, where he
+                absorbed the influence of the young avant-garde movements and,
+                as part of the Munich Blue Heron Group, later together with
+                artists such as Kandinsky, approached Expressionism. He
+                developed a preference for clear forms, reduced colors, and a
+                monumental visual language that used nature and the animal world
+                as central motifs. Central to him was the idea of revealing a
+                deeper spiritual reality through abstract, simplified forms and
+                giving the image a clear inner order.
+                <br />
+                <br />
+                Among his most important approaches is the introduction of
+                stylized animal figures, especially the horse, in intense,
+                luminous colors. His paintings strive for a harmonious, often
+                spiritual perception of the world, in which colors function as
+                symbols of the soul. While his early works were influenced by
+                naturalism, he soon developed an expressive, almost iconic
+                visual language.
+                <br />
+
+                His most famous works include the animal paintings and reduced
+                color studies of the Blue Rider group. Works such as "The Blue
+                Horses" (1911) and "Landscape with Red House" (1913) are
+                considered milestones of Expressionist painting because they
+                combine emotional intensity with a new, geometric clarity. Marc
+                made a significant contribution to the development of German
+                Expressionism. His short but influential career ended tragically
+                during the First World War.<br /><br />The videos on the left
+                give you an impression of Marc's style. To do this, click on
+                Play and then go to the white box corners in the bottom right of
+                the video. <br /><span style="color: rgb(125, 253, 174)"
+                  >Come, you too can paint a picture in his style:</span
+                >
+              </h2>
+            </div>
+
+            <br />
+            <canvas id="draw-canvas" width="1200" height="280"></canvas>
+            <div class="controls">
+              <button id="putzen">Cleaning the blackboard</button
+              ><button onclick="changeColor(2)" id="schwarz">
+                black color
+              </button>
+              <button
+                style="background-color: #2717fdff; color: rgb(214, 211, 211)"
+                onclick="changeColor(1)"
+                id="blau"
+              >
+                blue color
+              </button>
+              <button
+                style="background-color: #c20b30ff; color: rgb(214, 211, 211)"
+                onclick="changeColor(3)"
+                id="rot"
+              >
+                red color
+              </button>
+              <button
+                style="background-color: #097934ff; color: rgb(214, 211, 211)"
+                onclick="changeColor(4)"
+                id="grün"
+              >
+                green color
+              </button>
+              <button onclick="changeThickness(1)" id="dick">wide brush</button>
+              <button onclick="changeThickness(2)" id="dünn">
+                medium brush
+              </button>
+              <button onclick="changeThickness(3)" id="dünn">thin brush</button>
+            </div>
+            <br /><a href="https://ralbersme.github.io/myGalleryEngl/">
+              &#10149; Click here to go to the gallery.</a
+            ><br />
+            <a id="next" href="kalmanEngl.html">&#10149; to the next artist</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="marc.js"></script>
+  </body>
+</html>
