@@ -73,12 +73,17 @@ body {
     top: 23%;
     visibility: visible;
   }
-  90% {
+  70% {
     top: 48.8%;
+    top: 35%;
     visibility: visible;
   }
+  95% {
+    top: 46%;
+    visibility: hidden;
+  }
   100% {
-    top: 48.8%;
+    top: 46%;
     visibility: hidden;
   }
 }
@@ -172,6 +177,11 @@ a:hover {
   left: 78%;
   transform: rotate(15deg);
   transition: all 1s;
+}
+.links {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
 }
 /* Mobile Message */
 .mobile-message {
